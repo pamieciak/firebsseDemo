@@ -1,0 +1,6 @@
+<p>You are logged in</p>
+<button (click)="logout()">Log out</button>
+
+<div *ngFor="let res of response$ | async">
+    {{res | json}}
+</div>
